@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh lakshay@165.22.112.115
+  cd jenkins-testing
+  git pull origin master
+  npm install --production
+  pm2 restart all
+  exit
+EOF
