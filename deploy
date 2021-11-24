@@ -1,9 +1,10 @@
 #!/bin/sh
-ssh lakshay@165.22.112.115
+ssh lakshay@165.22.112.115<<EOF
   cd jenkins-testing
   git pull origin master
   npm install --production
   npm install -g pm2
-  pm2 restart all
+  pm2 stop all
+  pm2 start app.js
   exit
 EOF
