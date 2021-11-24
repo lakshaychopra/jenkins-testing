@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh lakshay@165.22.112.115<<EOF
+ssh -tt lakshay@165.22.112.115<<EOF
   cd jenkins-testing
   git pull origin master
   npm install --production
