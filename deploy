@@ -1,7 +1,7 @@
 #!/bin/sh
 ssh -tt lakshay@165.22.112.115<<EOF
   cd jenkins-testing
-  git pull origin master
+  # git pull origin master
   npm install --production
   npm install -g pm2
   pm2 stop all
