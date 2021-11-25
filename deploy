@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh -tt -o StrictHostKeyChecking=nolakshay@165.22.112.115<<EOF
+ssh -tt -o StrictHostKeyChecking=no lakshay@165.22.112.115<<EOF
   cd jenkins-testing
   git pull origin master
   npm install --production
